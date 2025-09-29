@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-Personal portfolio website for design, code, and illustrations (if we want to include those).
+In development personal portfolio website for design, code, and (potentially) illustrations.
 
 ## Requirements
 |Name|Version|
