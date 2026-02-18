@@ -11,6 +11,4 @@ export default defineNuxtConfig({
       tailwindcss()
     ]
   },
-
-  modules: ['@nuxtjs/storybook']
 })
