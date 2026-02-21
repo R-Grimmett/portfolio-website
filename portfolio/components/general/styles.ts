@@ -7,7 +7,7 @@ export enum buttonColours {
 /**
  * Enum containing the class tags specifically for the footer elements, primarily used in OFooter.vue 
  */
-export enum footerStyles {
-    header = 'text-lagoon-500',
+export enum backgrounds {
+    navigation = 'bg-linear-to-r from-fern-300 to-fern-500',
     hyperlink = '',
 }
