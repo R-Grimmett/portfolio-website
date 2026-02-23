@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MNavList from './MNavList.vue';
 import { backgrounds, text } from './styles';
 
 const footerStyles = computed (() => {
@@ -21,11 +22,7 @@ const disclaimer = computed (() => { return ["text-center mt-5", text.italic]})
         </div>
         <div class="flex flex-col">
             <h4 :class="text.footerHeader" >Site Navigation</h4>
-            <ul class="flex flex-row gap-5">
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/projects">Projects</NuxtLink></li>
-        </ul>
+            <MNavList variant="footer" />
         </div>
         <div :class="disclaimer">© 2026 Rachael Grimmett. <br> All Rights Reserved.</div>
     </footer>
