@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 type navListProps = {
-    variant?: 'header' | 'footer',
+    variant?: 'header' | 'sm:header' | 'footer',
 }
 
 const props = withDefaults(defineProps<navListProps>(), {

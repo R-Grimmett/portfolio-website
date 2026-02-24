@@ -14,7 +14,11 @@ const logoStyles = ref("p-5")
             <!-- LOGO PLACEHOLDER -->
              wow logo
         </div>
-        <MNavList variant="header" />
+        <div>
+            
+        </div>
+        <MNavList variant="header" class="hidden lg:flex" />
+        <MNavList variant="sm:header" class="lg:hidden" />
     </nav>
 
 </template>
