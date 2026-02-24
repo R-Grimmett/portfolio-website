@@ -5,7 +5,8 @@ Personal portfolio website for design, code, and illustrations (if we want to in
 |Name|Version|
 |---|---|
 |Vue| 3.5.21|
-|Nuxt|3.19.2|
-|Storybook|9.0.6|
-|@nuxtjs/storybook|9.0.1|
-|TailwindCSS|4.1.13|
+|Nuxt|4.1.3|
+|TailwindCSS|4.2.1|
+|@nuxt/icon|2.2.1|
+
+*Last Updated: 24/02/2026*
