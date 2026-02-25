@@ -13,4 +13,8 @@ export default defineNuxtConfig({
   },
 
   modules: ['@nuxt/icon'],
+  icon: {
+    mode: 'css',
+    cssLayer: 'base'
+  }
 })

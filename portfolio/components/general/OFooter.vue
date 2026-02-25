@@ -15,9 +15,9 @@ const disclaimer = computed (() => { return ["text-center mt-5", text.italic]})
         <div class="flex flex-col">
             <h4 :class="text.footerHeader" >Socials:</h4>
             <ul class="flex flex-row gap-5">
-                <li><NuxtLink to="https://www.linkedin.com/in/rachael-grimmett-168146198" target="_blank" >LinkedIn</NuxtLink></li>
-                <li><NuxtLink to="https://github.com/R-Grimmett" target="_blank">GitHub</NuxtLink></li>
-                <li><NuxtLink to="https://www.behance.net/rachaelgrimmett" target="_blank">BeHance</NuxtLink></li>
+                <li><NuxtLink to="https://www.linkedin.com/in/rachael-grimmett-168146198" target="_blank" ><Icon name="simple-icons:linkedin" /> LinkedIn</NuxtLink></li>
+                <li><NuxtLink to="https://github.com/R-Grimmett" target="_blank"><Icon name="simple-icons:github" /> GitHub</NuxtLink></li>
+                <li><NuxtLink to="https://www.behance.net/rachaelgrimmett" target="_blank"><Icon name="simple-icons:behance" /> BeHance</NuxtLink></li>
             </ul>
         </div>
         <div class="flex flex-col">
