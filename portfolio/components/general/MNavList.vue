@@ -23,7 +23,14 @@ const ulStyles = computed(() => {
 
 const liStyles = computed(() => {
     if (props.variant == 'sm:header') {
-        return "bg-cream-100 max-w-[75vw] ms-[25vw] flex flex-row p-5 my-2 rounded-l-lg border-4 border-fern-500 border-r-0 z-10"
+        return "bg-cream-100 max-w-[75vw] ms-[25vw] flex flex-row my-2 rounded-l-lg border-4 border-fern-500 border-r-0 z-10 "
+    }
+    return ""
+})
+
+const linkStyles = computed(() => {
+    if (props.variant == 'sm:header') {
+        return "grow p-5 hover:bg-sulphur-200"
     }
     return ""
 })
@@ -33,13 +40,13 @@ const liStyles = computed(() => {
 <template>
         <ul :class="ulStyles">
             <li :class="liStyles">
-                <NuxtLink to="/" @click="$emit('clicked')">Home</NuxtLink>
+                <NuxtLink to="/" @click="$emit('clicked')" :class="linkStyles" >Home</NuxtLink>
             </li>
             <li :class="liStyles">
-                <NuxtLink to="/about" @click="$emit('clicked')">About</NuxtLink>
+                <NuxtLink to="/about" @click="$emit('clicked')" :class="linkStyles" >About</NuxtLink>
             </li>
             <li :class="liStyles">
-                <NuxtLink to="/projects" @click="$emit('clicked')">Projects</NuxtLink>
+                <NuxtLink to="/projects" @click="$emit('clicked')" :class="linkStyles" >Projects</NuxtLink>
             </li>
         </ul>
 </template>
