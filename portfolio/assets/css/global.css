@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --font-atkinson: "Atkinson Hyperlegible", sans-serif;
+    --font-sedgwick: "Sedgwick Ave", cursive;
+    --font-sedgwick-display: "Sedgwick Ave Display", cursive;
+
+    --color-lagoon-50: #e0f4ff;
+    --color-lagoon-100: #c6ebfe;
+    --color-lagoon-200: #79d8fe;
+    --color-lagoon-300: #1fc2ef;
+    --color-lagoon-400: #19a5cc;
+    --color-lagoon-500: #138cad;
+    --color-lagoon-600: #0e7490;
+    --color-lagoon-700: #08576d;
+    --color-lagoon-800: #043c4c;
+    --color-lagoon-900: #01212b;
+    --color-lagoon-950: #01161e;
+
+    --color-fern-50: #d9fd9e;
+    --color-fern-100: #c4f657;
+    --color-fern-200: #aedb4c;
+    --color-fern-300: #99c142;
+    --color-fern-400: #82a437;
+    --color-fern-500: #6d8b2d;
+    --color-fern-600: #5a7324;
+    --color-fern-700: #435719;
+    --color-fern-800: #2d3c0f;
+    --color-fern-900: #182105;
+    --color-fern-950: #0f1603;
+
+    --color-sulphur-50: #f5f3d1;
+    --color-sulphur-100: #ece8a7;
+    --color-sulphur-200: #d9d04e;
+    --color-sulphur-300: #d3c831;
+    --color-sulphur-400: #b5ab27;
+    --color-sulphur-500: #978f20;
+    --color-sulphur-600: #7a741a;
+    --color-sulphur-700: #5c5814;
+    --color-sulphur-800: #3b380d;
+    --color-sulphur-900: #1d1c06;
+    --color-sulphur-950: #111004;
+
+    --color-cream-50: #f8f3e6;
+    --color-cream-100: #f2ead0;
+    --color-cream-200: #d7cca4;
+    --color-cream-300: #bab08e;
+    --color-cream-400: #9e9678;
+    --color-cream-500: #807961;
+    --color-cream-600: #66614d;
+    --color-cream-700: #4d4939;
+    --color-cream-800: #363227;
+    --color-cream-900: #1e1b14;
+    --color-cream-950: #12110b;
+
+    --color-gold-50: #f9f1e2;
+    --color-gold-100: #f2e2c4;
+    --color-gold-200: #e6c589;
+    --color-gold-300: #d9a84e;
+    --color-gold-400: #d2982d;
+    --color-gold-500: #ac7c25;
+    --color-gold-600: #8b641e;
+    --color-gold-700: #694c17;
+    --color-gold-800: #47340f;
+    --color-gold-900: #221807;
+    --color-gold-950: #110c04;
+    
+    --color-night-50: #efedf2;
+    --color-night-100: #e2dee7;
+    --color-night-200: #c4bbce;
+    --color-night-300: #a99bb8;
+    --color-night-400: #8c7a9f;
+    --color-night-500: #715e83;
+    --color-night-600: #51435f;
+    --color-night-700: #362c40;
+    --color-night-800: #261e2e;
+    --color-night-900: #19131f;
+    --color-night-950: #0d0911;
+}
