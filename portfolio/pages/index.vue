@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <main>
+    <NuxtLayout>
+        <main>
         <section>
             <h1>Home Page</h1>
         </section>
@@ -32,4 +33,5 @@
                 at dolor mollis lobortis. </p>
         </section>
     </main>
+    </NuxtLayout>
 </template>

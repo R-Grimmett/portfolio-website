@@ -8,5 +8,6 @@ Personal portfolio website for design, code, and illustrations (if we want to in
 |Nuxt|4.1.3|
 |TailwindCSS|4.2.1|
 |@nuxt/icon|2.2.1|
+|NuxtUI|4.5.0|
 
-*Last Updated: 24/02/2026*
+*Last Updated: 27/02/2026*

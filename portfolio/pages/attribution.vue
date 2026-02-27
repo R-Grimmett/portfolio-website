@@ -4,6 +4,7 @@ import { backgrounds, text } from '~/components/general/styles';
 </script>
 
 <template>
+    <NuxtLayout>
     <main class="p-5" :class="backgrounds.page">
         <h1 class="border-b-3 border-gold-300/75 mb-2" :class="text.h1" >Attribution</h1>
         <p :class="text.default" >The following tools and resources helped make this website possible:</p>
@@ -18,4 +19,5 @@ import { backgrounds, text } from '~/components/general/styles';
             </ACard>
         </div>
     </main>
+    </NuxtLayout>
 </template>

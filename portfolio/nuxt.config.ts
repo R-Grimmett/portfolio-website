@@ -12,9 +12,9 @@ export default defineNuxtConfig({
     ]
   },
 
-  modules: ['@nuxt/icon'],
+  modules: ['@nuxt/icon', '@nuxt/ui'],
   icon: {
     mode: 'css',
     cssLayer: 'base'
-  }
+  },
 })
