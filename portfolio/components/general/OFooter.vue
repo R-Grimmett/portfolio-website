@@ -24,6 +24,8 @@ const disclaimer = computed (() => { return ["text-center mt-5", text.italic]})
             <h4 :class="text.footerHeader" >Site Navigation</h4>
             <MNavList variant="footer" />
         </div>
-        <div :class="disclaimer">© 2026 Rachael Grimmett. <br> All Rights Reserved.</div>
+        <div :class="disclaimer">© 2026 Rachael Grimmett. 
+            <br><NuxtLink to="/attribution">Site Information and Attribution.</NuxtLink>
+            <br> All Rights Reserved.</div>
     </footer>
 </template>
