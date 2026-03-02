@@ -6,9 +6,11 @@ const footerStyles = computed (() => {
     return ["flex flex-col gap-4 p-5", backgrounds.navigation]
 })
 
-const disclaimer = computed (() => { return ["text-center mt-5", text.italic]})
+const disclaimer = computed (() => { return ["text-center my-5", text.italic]})
 
-const socialLinkStyles = ref(["text-base bg-transparent ", text.default]);
+const socialLinkStyles = ref(["text-base bg-transparent hover:bg-fern-700/25", text.default, text.hoverLink]);
+
+const attrLinkStyles = ref(["text-base bg-transparent hover:bg-fern-700/25", text.italic, text.hoverLink]);
 
 </script>
 
@@ -36,7 +38,7 @@ const socialLinkStyles = ref(["text-base bg-transparent ", text.default]);
             <MNavList variant="footer" />
         </div>
         <div :class="disclaimer">© 2026 Rachael Grimmett. 
-            <br><NuxtLink to="/attribution">Site Information and Attribution.</NuxtLink>
+            <br> <UButton to="/attribution" :class="attrLinkStyles" trailing-icon="majesticons:arrow-right">Site Information and Attribution.</UButton>
             <br> All Rights Reserved.</div>
     </footer>
 </template>

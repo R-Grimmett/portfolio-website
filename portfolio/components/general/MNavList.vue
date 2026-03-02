@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { borders, text } from './styles';
 
 type navListProps = {
     variant?: 'header' | 'sm:header' | 'footer',
@@ -21,32 +22,34 @@ const ulStyles = computed(() => {
     }
 })
 
-const liStyles = computed(() => {
-    if (props.variant == 'sm:header') {
-        return "bg-cream-100 max-w-[75vw] ms-[25vw] flex flex-row my-2 rounded-l-lg border-4 border-fern-500 border-r-0 z-10 "
-    }
-    return ""
-})
-
 const linkStyles = computed(() => {
-    if (props.variant == 'sm:header') {
-        return "grow p-5 hover:bg-sulphur-200"
+    switch (props.variant) {
+        case 'sm:header':
+            return [text.h2, borders.shadedFern,
+                "grow p-5 bg-cream-100 hover:bg-sulphur-200 min-w-[80vw] ms-[25vw] rounded-l-lg border-r-0 z-10"]
+        case 'footer':
+            return [text.default, text.hoverLink, "text-base bg-transparent hover:bg-fern-700/25"]
+        default:
+            return ""
     }
-    return ""
 })
 
 </script>
 
 <template>
         <ul :class="ulStyles">
-            <li :class="liStyles">
-                <NuxtLink to="/" @click="$emit('clicked')" :class="linkStyles" >Home</NuxtLink>
+            <li>
+                <UButton to="/" @click="$emit('clicked')" :class="linkStyles" >
+                    <Icon v-if="props.variant == 'sm:header'" name="majesticons:home-line" size="1.5em" style="margin-right: 0.5rem;" />Home</UButton>
             </li>
-            <li :class="liStyles">
-                <NuxtLink to="/about" @click="$emit('clicked')" :class="linkStyles" >About</NuxtLink>
+            <li>
+                <UButton to="/about" @click="$emit('clicked')" :class="linkStyles" >
+                    <Icon v-if="props.variant == 'sm:header'" name="majesticons:user-line" size="1.5em" style="margin-right: 0.5rem;" />About</UButton>
             </li>
-            <li :class="liStyles">
-                <NuxtLink to="/projects" @click="$emit('clicked')" :class="linkStyles" >Projects</NuxtLink>
+            <li>
+                <UButton to="/projects" @click="$emit('clicked')" :class="linkStyles" >
+                    <Icon v-if="props.variant == 'sm:header'" name="majesticons:paper-fold-line" size="1.5em" style="margin-right: 0.5rem;" />Projects</UButton>
             </li>
+            <slot></slot>
         </ul>
 </template>

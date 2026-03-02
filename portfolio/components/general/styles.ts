@@ -29,5 +29,6 @@ export enum text {
     h2 = "font-sedgwick text-2xl text-black",
     h3 = "font-atkinson text-black text-xl font-semibold text-black",
     footerHeader = "font-atkinson text-black text-xl",
-    italic = "font-atkinson italic text-black"
+    italic = "font-atkinson italic text-black",
+    hoverLink = "hover:font-bold"
 }
