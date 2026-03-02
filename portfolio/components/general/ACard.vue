@@ -5,16 +5,14 @@ import { backgrounds, borders, text } from './styles';
 type CardProps = {
     title?: string | null,
     subtitle?: string | null,
-    content: string,
     link?: string | null,
-    linkContext?: string,
+    linkIcon?: string
 }
 
 const props = withDefaults(defineProps<CardProps>(), {
     title: null,
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque justo nulla, eleifend et sodales eu, pulvinar in arcu.",
     link: null,
-    linkContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    linkIcon: "",
 });
 
 </script>
@@ -23,7 +21,11 @@ const props = withDefaults(defineProps<CardProps>(), {
     <div class="flex flex-col g-2 p-5 m-1" :class="backgrounds.card, borders.shadedFern" >
         <h3 v-if="props.title != null" :class="text.h3" >{{ props.title }}</h3>
         <h4 v-if="props.subtitle != null" :class="text.italic" >{{ props.subtitle }}</h4>
-        <p :class="text.default" > {{ props.content }}</p>
-        <NuxtLink v-if="props.link != null" :to="props.link" target="_blank" class="mt-3" ><slot /> {{ linkContext }}</NuxtLink>
+        <p :class="text.default" ><slot name="content"></slot></p>
+        <UButton v-if="props.link != null" :icon="props.linkIcon" :to="props.link" target="_blank" class="mt-3 text-base bg-fern-600 hover:bg-fern-700" 
+            :class="text.defaultDark">
+            <slot name="linkContext"></slot>
+            <Icon name="majesticons:external-link" size="1.5em" style="color: var(--color-sulphur-200); margin-left: auto;"/>
+        </UButton>
     </div>
 </template>

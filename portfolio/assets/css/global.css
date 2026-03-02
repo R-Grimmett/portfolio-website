@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/* Tailwind CSS theming. */
 @theme {
     --font-atkinson: "Atkinson Hyperlegible", sans-serif;
     --font-sedgwick: "Sedgwick Ave", cursive;

@@ -24,9 +24,10 @@ export enum borders {
  */
 export enum text {
     default = "font-atkinson text-black",
-    h1 = "font-sedgwick-display text-3xl",
-    h2 = "font-sedgwick text-2xl",
-    h3 = "font-atkinson text-black text-xl font-semibold",
+    defaultDark = "font-attkinson text-cream-100",
+    h1 = "font-sedgwick-display text-3xl text-black",
+    h2 = "font-sedgwick text-2xl text-black",
+    h3 = "font-atkinson text-black text-xl font-semibold text-black",
     footerHeader = "font-atkinson text-black text-xl",
-    italic = "font-atkinson italic"
+    italic = "font-atkinson italic text-black"
 }
