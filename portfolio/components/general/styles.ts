@@ -16,6 +16,7 @@ export enum backgrounds {
 
 export enum borders {
     fern = "rounded-lg border-5 border-fern-400",
+    bottomFern = "border-b-5 border-fern-700/50",
     shadedFern = 'rounded-lg border-5 border-fern-400 shadow-[5px_5px_0px_0px] shadow-fern-500',
 }
 

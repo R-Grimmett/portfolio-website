@@ -3,7 +3,7 @@ import MNavList from './MNavList.vue';
 import { backgrounds, text } from './styles';
 
 const footerStyles = computed (() => {
-    return ["flex flex-col gap-4 p-5", backgrounds.navigation]
+    return ["flex flex-col gap-4 p-5 divide-solid divide-fern-600/50 divide-y-3", backgrounds.navigation]
 })
 
 const disclaimer = computed (() => { return ["text-center my-5", text.italic]})
@@ -18,7 +18,7 @@ const attrLinkStyles = ref(["text-base bg-transparent hover:bg-fern-700/25", tex
     <footer :class="footerStyles">
         <div class="flex flex-col">
             <h4 :class="text.footerHeader" >Socials:</h4>
-            <ul class="flex flex-row gap-2">
+            <ul class="flex flex-row gap-2 mb-2">
                 <li><UButton to="https://www.linkedin.com/in/rachael-grimmett-168146198" target="_blank" icon="simple-icons:linkedin"
                     :class="socialLinkStyles" >LinkedIn
                     </UButton>
@@ -35,7 +35,7 @@ const attrLinkStyles = ref(["text-base bg-transparent hover:bg-fern-700/25", tex
         </div>
         <div class="flex flex-col">
             <h4 :class="text.footerHeader" >Site Navigation</h4>
-            <MNavList variant="footer" />
+            <MNavList variant="footer" class="mb-2" />
         </div>
         <div :class="disclaimer">© 2026 Rachael Grimmett. 
             <br> <UButton to="/attribution" :class="attrLinkStyles" trailing-icon="majesticons:arrow-right">Site Information and Attribution.</UButton>
